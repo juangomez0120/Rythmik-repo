@@ -141,12 +141,12 @@ nav ul a{
 
 @media (max-width: 520px){
     .font-metodologia{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 @media (max-width: 403px){
     .font-metodologia{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -297,6 +297,17 @@ nav ul a{
     font-weight: 400;
     top: -150px;
     height: auto;
+}
+
+@media (max-width: 500px){
+    .contactanos-box{
+        padding: 25px;
+    }
+    .boton-contactanos{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 }
 
 @media (min-width: 992px){
@@ -514,7 +525,12 @@ input[type=text]:focus, textarea:focus{
     .pregunta-primera, .contruye{
         font-size: 2.7rem;
     }
+}
 
+@media(max-width: 420px){
+    .pregunta-primera i, .contruye{
+        font-size: 2rem;
+    }
 }
 
 .servicios-texto-1{
@@ -663,7 +679,16 @@ input[type=text]:focus, textarea:focus{
     }
 }
 
+#logo-nav{
+    width: 200px;
+}
 
+@media (max-width: 420px){
+    #logo-nav{
+        width: 150px;
+    }
+    
+}
 
 @media (max-width: 700px){
     #img-landing{
@@ -684,6 +709,12 @@ input[type=text]:focus, textarea:focus{
 @media (max-width: 520px){
     #img-landing{
         top: 90%;
+    }
+}
+
+@media (max-width: 420px){
+    #img-landing{
+        top: 150%;
     }
 }
 
