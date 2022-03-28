@@ -139,6 +139,17 @@ nav ul a{
     font-weight: 900;
 }
 
+@media (max-width: 520px){
+    .font-metodologia{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 403px){
+    .font-metodologia{
+        font-size: 1.3rem;
+    }
+}
+
 .titulo-metodologia{
     text-align: center;
     margin-top: 60px;

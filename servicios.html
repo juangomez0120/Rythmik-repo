@@ -28,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="nav navbar-nav ms-auto">
                     <li class="nav-item m-3">
-                        <a class="nav-link" aria-current="page" href="index2.html">METODOLOGÍA R</a>
+                        <a class="nav-link" aria-current="page" href="index.html">METODOLOGÍA R</a>
                     </li>
                     <li class="nav-item m-3">
                         <a style="color: #EA0D43;" class="nav-link" href="servicios.html">SERVICIOS</a>
@@ -101,26 +101,26 @@
                 <p>Agenda una llamada con nosotros y aclararemos todas tus dudas. <span>El poder de tu marca comienza contigo.</span></p>
             </div>
             <div class="col-lg-6 col-12 contactanos-box">
-                <form onsubmit="event.preventDefault(); validateForm()">
+                <form action="contact_get.php" method="POST">
                     <h1 class="font-metodologia">CONTÁCTANOS</h1>
                     <label for="name">Nombre</label>
-                    <input type="text" id="name" placeholder="Escribe tu nombre aquí">
+                    <input type="text" id="name" name="name" placeholder="Escribe tu nombre aquí" required>
                     <small class="error">&nbsp;</small>
 
                     <label for="email">Correo</label>
-                    <input type="text" id="email" placeholder="ejemplo@gmail.com">
+                    <input type="text" id="email" name="email" placeholder="ejemplo@gmail.com" required>
                     <small class="error">&nbsp;</small>
 
                     <label for="empresa">Empresa</label>
-                    <input type="text" id="empresa" placeholder="El nombre de tu proyecto">
+                    <input type="text" id="empresa" name="empresa" placeholder="El nombre de tu proyecto" required>
                     <small class="error">&nbsp;</small>
 
                     <label for="message">Mensaje</label>
-                    <textarea id="message" placeholder="Nos encanta poder platicar contigo" rows="4"></textarea> 
+                    <textarea id="message" name="message" placeholder="Nos encanta poder platicar contigo" rows="4" required></textarea> 
                     <small class="error">&nbsp;</small>
 
                     <div>
-                        <input class="boton-contactanos mt-3 texto-boton" type="submit" value="Enviar mensaje">
+                        <input class="boton-contactanos mt-3 texto-boton" type="submit" name="submit" value="Enviar mensaje">
                         <p id="success"></p>
                     </div>
                 </form>
@@ -128,19 +128,16 @@
         </div>
     </div>
     <div class="footer container-fluid">
-        <div class="row">
+        <div class="row justify-content-evenly">
             <div class="col-3">
-                <a href="#" class="link-footer">Blog</a>
-                <a href="#" class="link-footer">Latest Work</a>
-                <a href="#" class="link-footer">Carreras</a>
-                <a href="#" class="link-footer">Contacto</a>
+                <a href="#contactanos" class="link-footer">Contacto</a>
             </div>
             <div class="col-3">
-                <a href="#" class="link-footer">Toluca</a>
-                <a href="#" class="link-footer">Querétaro</a>
-                <a href="#" class="link-footer">Monterrey</a>
+                <p>Toluca</p>
+                <p>Querétaro</p>
+                <p>Monterrey</p>
             </div>
-            <div class="col-3 ms-auto">
+            <div class="col-3">
                 <p>rythmic.mx</p>
                 <a href=""><img class="social-icon" src="./img/FB.svg" alt=""></a>
                 <a href=""><img class="social-icon" src="./img/IG.svg" alt=""></a>
