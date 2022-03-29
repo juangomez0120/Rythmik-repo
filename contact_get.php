@@ -9,7 +9,7 @@
         $empresa = $_POST['empresa'];
         $message = $_POST['message'];
 
-        $to = "jmgomezortiz@gmail.com";
+        $to = "a00828010@tec.mx";
         $from = "a00828010@tec.mx";
         $subject = $nombre.' desea contactarte!';
         $correo = "Nombre: " .$nombre;
