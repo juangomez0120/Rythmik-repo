@@ -24,16 +24,11 @@
         $result = mail($to, $subject, $message, $headers);
 
         if($result){
-            $noti = "Correo enviado correctamente";
+            echo '<script>alert("Correo Enviado Correctamente")</script>';
         } else {
-            $noti = "Error al enviar correo.";
+            echo '<script>alert("No se pudo enviar el correo")</script>';
         }
-
-        $notiCK = "notificacion";
-        $notiCK_value = $noti;
-        setcookie($notiCK, $notiCK_value, 0, "/"); // 86400 = 1 day
         
-        echo '<script>alert("Welcome to Geeks for Geeks")</script>';
     }
     
 ?>
