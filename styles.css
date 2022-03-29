@@ -7,6 +7,46 @@ body{
     font-weight: 300;
 }
 
+#index{
+    background-color: #1B1B59;
+    background-size: cover;
+    z-index: 1;
+}
+
+#img-landing{
+    position: absolute;
+    top: -30%;
+    width: 100%;
+    z-index: 2;
+}
+
+#navbarr{
+    position: relative;
+    z-index: 3;
+}
+
+#logo-nav{
+    width: 200px;
+}
+
+.texto-pagina-1{
+    position: relative;
+    color: white;
+    z-index: 3;
+}
+
+.titulo-1{
+    font-size: 3.8rem;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+.light{
+    font-weight: 200;
+}
+
 .logonav{
     margin-left: 50px
 }
@@ -46,31 +86,12 @@ nav ul a{
     margin: 0;
 }
 
-.texto-landing{
-    position: relative;
-    color: white;
-    z-index: 3;
-}
-
-#index{
-    background-color: #1B1B59;
-    background-size: cover;
-    z-index: 1;
-}
-
 #hero-main{
     position: absolute;
     top: -400px;
     width: 100vw;
 }
 
-.pregunta-primera{
-    font-size: 3.8rem;
-}
-
-.pregunta-primera i{
-    font-weight: 200;
-}
 
 .contruye{
     font-weight: 800;
@@ -86,13 +107,8 @@ nav ul a{
     font-weight: 400;
 }
 
-#navbarr{
-    position: relative;
-    z-index: 3;
-}
-
-.primer-boton{
-    display: block;
+.boton-rojo-1{
+    display: inline-block;
     border:none;
     background-color: #EA0D43;
     border-radius: 25px;
@@ -125,7 +141,7 @@ nav ul a{
     margin-bottom: 100px;
 }
 
-.segundo-texto-index .primer-boton{
+.segundo-texto-index .boton-rojo-1{
     margin-bottom: 100px;
     margin-top: 10px;
 }
@@ -448,6 +464,7 @@ input[type=text]:focus, textarea:focus{
 
 .texto-metodologia{
     font-weight: 300;
+    text-align: center;
 }
 
 .texto-metodologia span{
@@ -522,13 +539,13 @@ input[type=text]:focus, textarea:focus{
 }
 
 @media (max-width: 768px){
-    .pregunta-primera, .contruye{
-        font-size: 2.7rem;
+    .titulo-1{
+        font-size: 2rem;
     }
 }
 
 @media(max-width: 420px){
-    .pregunta-primera i, .contruye{
+    .titulo-1{
         font-size: 2rem;
     }
 }
@@ -654,13 +671,6 @@ input[type=text]:focus, textarea:focus{
     }
 }
 
-#img-landing{
-    position: absolute;
-    top: -30%;
-    width: 100%;
-    z-index: 2;
-}
-
 @media (max-width: 1400px){
     #img-landing{
         top: 0;  
@@ -675,12 +685,8 @@ input[type=text]:focus, textarea:focus{
 
 @media (max-width: 1084px){
     #img-landing{
-        top: 30%;
+        top: 50%;
     }
-}
-
-#logo-nav{
-    width: 200px;
 }
 
 @media (max-width: 420px){
@@ -698,7 +704,7 @@ input[type=text]:focus, textarea:focus{
 
 @media (max-width: 620px){
     #img-landing{
-        top: 80%;
+        top: 50%;
     }
 
     .texto-boton{
@@ -708,13 +714,31 @@ input[type=text]:focus, textarea:focus{
 
 @media (max-width: 520px){
     #img-landing{
-        top: 90%;
+        top: 60%;
     }
 }
 
 @media (max-width: 420px){
     #img-landing{
-        top: 150%;
+        top: 60%;
+    }
+}
+
+@media (max-width: 388px){
+    #img-landing{
+        top: 80%;
+    }
+}
+
+@media (max-width: 310px){
+    #img-landing{
+        top: 90%;
+    }
+}
+
+@media (max-width: 290px){
+    #img-landing{
+        top: 100%;
     }
 }
 
