@@ -2,7 +2,6 @@
     error_reporting(-1);
     ini_set('display_errors', 'On');
     set_error_handler("var_dump");
-    print_r($_POST);
     if(isset($_POST['submit'])){
         $nombre = $_POST['name'];
         $email = $_POST['email'];
@@ -34,7 +33,7 @@
         $notiCK_value = $noti;
         setcookie($notiCK, $notiCK_value, 0, "/"); // 86400 = 1 day
         
-        echo $noti;
+        echo '<script>alert("Welcome to Geeks for Geeks")</script>';
     }
     
 ?>
